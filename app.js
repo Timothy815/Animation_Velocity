@@ -1,6 +1,5 @@
 let $ball = $("#animateme");
 $ball
-.velocity({width: "500px", height: "500px", fontSize:"75px"},{duration: 3000, easing: "easeInQuad", delay: 1000})
-.velocity("reverse", {duration: 3000, easing: "easeInQuad"})
-.velocity({rotate: "45deg"}, {duration:2000, easing: "easeInQuad"})
+.velocity({width: "110px", height: "110px", fontSize:"15px", transform: ['rotate(360deg)','rotate(0deg)']},{duration: 1000, easing: "swing", delay: 500,loop:true});
+
 
