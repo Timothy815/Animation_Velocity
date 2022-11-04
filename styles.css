@@ -1,0 +1,12 @@
+#animateme{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position:relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: red;
+	font-family: sans-serif;
+
+}
