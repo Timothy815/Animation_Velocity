@@ -95,4 +95,87 @@ var $btn3 = $("#btn3");
 
 //$btn1.velocity({transform: ["translateY(30px)","translateY(0px)"]},{duration:1000, delay:1000});
 
-$btn1.velocity("bounce");
+
+
+	//	transform: ["translate3d(0,0px,0)", "easeOutCubic"]
+
+
+function mybounce(element){
+	element.velocity({
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -50px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
+	},{
+		
+		duration:200,
+		easeing: "spring"
+	})
+	.velocity({
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 30px)", "perspective(100px) translate3d(0.1px, 0.1px, -50px)"]
+	},{
+		
+		duration:100,
+		easeing: "spring"
+	})
+	.velocity({
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -10px)", "perspective(100px) translate3d(0.1px, 0.1px, 30px)"]
+	},{
+		
+		duration:100,
+		easeing: "spring"
+	})
+	.velocity({
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, -10px)"]},{
+			
+			duration:50,
+			easeing: "spring"
+		})
+
+}
+
+var btn1 = document.getElementById("btn1")
+
+btn1.addEventListener("click", ()=>{
+	mybounce($btn1);
+});
+
+var btn2 = document.getElementById("btn2")
+
+btn2.addEventListener("click", ()=>{
+	mybounce($btn2);
+});
+
+var btn3 = document.getElementById("btn3")
+
+btn3.addEventListener("click", ()=>{
+	mybounce($btn3);
+});
+
+
+//$btn1.velocity({
+//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -110px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
+//},{
+//	
+//	duration:200,
+//	easeing: "spring"
+//})
+//.velocity({
+//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 30px)", "perspective(100px) translate3d(0.1px, 0.1px, -110px)"]
+//},{
+//	
+//	duration:100,
+//	easeing: "spring"
+//})
+//.velocity({
+//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -10px)", "perspective(100px) translate3d(0.1px, 0.1px, 30px)"]
+//},{
+//	
+//	duration:100,
+//	easeing: "spring"
+//})
+//.velocity({
+//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, -10px)"]},{
+//	
+//	duration:50,
+//	easeing: "spring"
+//})
+
+//velocity({ transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -110px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"] });
