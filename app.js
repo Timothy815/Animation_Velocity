@@ -3,7 +3,10 @@ $ball1.velocity({width: "100px", height: "100px", fontSize:"15px", transform: ['
 
 var $ball2 = $("#ball2");
 $ball2.velocity({
-	transform: [ "rotate(360deg)", "rotate(0deg)"], // Uses "spring"
+	transform: [ 
+		"translateX(300px) rotate(360deg)",
+		"translateX(0px) rotate(0deg)"
+	],
 	width: [ "110px", [ 250, 15 ] ], // Uses custom spring physics
 	height: ["110px",[ 0.17, 0.67, 0.83, 0.67 ]],
 	backgroundColor: [ "rgba(255,255,12,1.0)" ],
