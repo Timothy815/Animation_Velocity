@@ -131,21 +131,20 @@ function mybounce(element){
 
 }
 
-var btn1 = document.getElementById("btn1")
 
-btn1.addEventListener("click", ()=>{
+
+$btn1.on("mouseover click", ()=>{
 	mybounce($btn1);
 });
 
-var btn2 = document.getElementById("btn2")
 
-btn2.addEventListener("click", ()=>{
+
+$btn2.on("mouseover click", ()=>{
 	mybounce($btn2);
 });
 
-var btn3 = document.getElementById("btn3")
 
-btn3.addEventListener("click", ()=>{
+$btn3.on("mouseover click", ()=>{
 	mybounce($btn3);
 });
 
