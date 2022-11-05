@@ -150,32 +150,3 @@ btn3.addEventListener("click", ()=>{
 });
 
 
-//$btn1.velocity({
-//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -110px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
-//},{
-//	
-//	duration:200,
-//	easeing: "spring"
-//})
-//.velocity({
-//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 30px)", "perspective(100px) translate3d(0.1px, 0.1px, -110px)"]
-//},{
-//	
-//	duration:100,
-//	easeing: "spring"
-//})
-//.velocity({
-//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -10px)", "perspective(100px) translate3d(0.1px, 0.1px, 30px)"]
-//},{
-//	
-//	duration:100,
-//	easeing: "spring"
-//})
-//.velocity({
-//	transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, -10px)"]},{
-//	
-//	duration:50,
-//	easeing: "spring"
-//})
-
-//velocity({ transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -110px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"] });
