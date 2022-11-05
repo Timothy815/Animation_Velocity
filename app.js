@@ -102,30 +102,30 @@ var $btn3 = $("#btn3");
 
 function mybounce(element){
 	element.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -50px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -30px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
 	},{
 		
-		duration:200,
+		duration:70,
 		easeing: "spring"
 	})
 	.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 30px)", "perspective(100px) translate3d(0.1px, 0.1px, -50px)"]
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 20px)", "perspective(100px) translate3d(0.1px, 0.1px, -30px)"]
 	},{
 		
-		duration:100,
+		duration:60,
 		easeing: "spring"
 	})
 	.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -10px)", "perspective(100px) translate3d(0.1px, 0.1px, 30px)"]
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -5px)", "perspective(100px) translate3d(0.1px, 0.1px, 20px)"]
 	},{
 		
-		duration:100,
+		duration:50,
 		easeing: "spring"
 	})
 	.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, -10px)"]},{
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, -5px)"]},{
 			
-			duration:50,
+			duration:40,
 			easeing: "spring"
 		})
 
