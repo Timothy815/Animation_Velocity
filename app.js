@@ -178,3 +178,29 @@ btnlst.velocity({
 
 	
 });
+
+//progress: tweening
+var info = document.getElementById("info");
+//info.innerHTML="The current tween value is " + tweenValue;
+$btn1.velocity({
+	tween: [ 0, 1000 ]
+}, {
+	progress: function(elements, percentComplete, remaining, tweenValue, activeCall) {
+		console.log("The current tween value is " + tweenValue)
+		//info.innerHTML="The current tween value is " + tweenValue;
+	}
+});
+/*
+$btn1.velocity({
+	//opacity: 0.5,
+	tween: 1000 // Optional
+}, {
+	progress: function(elements, percentComplete, remaining, tweenValue, activeCall) {
+		console.log("Current element:", activeCall.element);
+		console.log((percentComplete * 100) + "%");
+		console.log("Started at", new Date(Date.now() - activeCall.ellapsedTime));
+		console.log(remaining + "ms remaining!");
+		console.log("The current tween value is", tweenValue);
+	}
+});
+	*/
