@@ -101,32 +101,34 @@ var $btn3 = $("#btn3");
 
 
 function mybounce(element){
+	var ease = "ease-in-out";
+	var dur = 60;
 	element.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -30px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -15px)", "perspective(100px) translate3d(0.1px, 0.1px, 0px)"]
 	},{
 		
-		duration:70,
-		easeing: "spring"
+		duration:dur,
+		easeing: ease
 	})
 	.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 20px)", "perspective(100px) translate3d(0.1px, 0.1px, -30px)"]
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 10px)", "perspective(100px) translate3d(0.1px, 0.1px, -15px)"]
 	},{
 		
-		duration:60,
-		easeing: "spring"
+		duration:dur - 10,
+		easeing: ease
 	})
 	.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -5px)", "perspective(100px) translate3d(0.1px, 0.1px, 20px)"]
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, -10px)", "perspective(100px) translate3d(0.1px, 0.1px, 5px)"]
 	},{
 		
-		duration:50,
-		easeing: "spring"
+		duration:dur - 20,
+		easeing: ease
 	})
 	.velocity({
-		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, -5px)"]},{
+		transform: [ "perspective(100px) translate3d(0.1px, 0.1px, 0px)", "perspective(100px) translate3d(0.1px, 0.1px, 5px)"]},{
 			
-			duration:40,
-			easeing: "spring"
+			duration:dur - 30,
+			easeing: ease
 		})
 
 }
@@ -149,3 +151,30 @@ $btn3.on("mouseover click", ()=>{
 });
 
 
+//queues
+//$btn1.velocity({top: "50px",left: "90px"},{duration:1000})
+//.velocity("reverse",{duration:1000})
+//.velocity({height:"35px",width:"50px"},{duration:1000});
+//
+//$btn1.velocity({height: "50px"},{duration:1000,queue:false});
+//$btn1.velocity({width: "110px"},{duration:1000,queue:false});
+
+//stagger
+var cls = document.getElementsByClassName("btn");
+var btnlst = cls;
+
+
+btnlst.velocity({
+	transform: ["translateY(100px)","translateY(0px)"],
+	width:"100px",
+	opacity: 1
+}, {
+	
+	stagger: 300,
+	duration: 1000,
+	speed: 2,
+	easing:[3000,50]
+	
+
+	
+});
