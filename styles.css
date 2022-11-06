@@ -54,6 +54,6 @@ html{
 }
 
 #btn1:hover,#btn2:hover,#btn3:hover{
-	background-color: gray;
+	background-color: purple;
 	color: white;
 }

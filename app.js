@@ -204,3 +204,11 @@ $btn1.velocity({
 	}
 });
 	*/
+
+/*
+var cls2 = document.getElementsByClassName("btn");
+var btnlst2 = cls2;
+
+	btnlst2[0].velocity({ height: "100px" },{duration:500, easing:"ease-in-out"});
+	btnlst2.velocity({ opacity: 0.5 }, { sync: false });
+*/
